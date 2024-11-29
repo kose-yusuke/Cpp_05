@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:26:16 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/11/29 13:33:28 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/11/29 13:41:14 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 int main() {
 
-	srand( (int)time(NULL));
+	srand((int)time(NULL));
 	
     try {
 		std::cout << "Test start!!" << std::endl;
