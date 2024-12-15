@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 11:29:17 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/11/29 11:40:24 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/12/15 15:45:16 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,11 @@ void ShrubberyCreationForm::execute(Bureaucrat const& executor) const {
     std::ofstream file(target_ + "_shrubbery");
     if (file.is_open())
     {
-        file << "ASCII Tree" << std::endl;
+        file << "        *         " << std::endl;
+        file << "       ***        " << std::endl;
+        file << "      *****       " << std::endl;
+        file << "    *********     " << std::endl;
+        file << "       | |        " << std::endl;
         file.close();
     }
 }
