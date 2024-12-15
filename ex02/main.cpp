@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:26:16 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/11/29 13:41:14 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/12/15 15:34:23 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,11 @@ int main() {
         Bureaucrat low_grade_bureaucrat("LowGradeBureaucrat", 150);
         low_grade_bureaucrat.signForm(shrubbery);
         low_grade_bureaucrat.executeForm(shrubbery);
+
+        std::cout << "==============Not Signed Form============" << std::endl;
+        Bureaucrat high_grade_bureaucrat("HighGradeBureaucrat", 1);
+        RobotomyRequestForm robotomy2("Jack");
+        high_grade_bureaucrat.executeForm(robotomy2);
 		
 		std::cout << "==============InvalidGradeBureaucrat============" << std::endl;
         Bureaucrat invalid_grade_bureaucrat("InvalidGradeBureaucrat", 151);
