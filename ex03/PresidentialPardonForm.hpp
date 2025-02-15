@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 11:28:21 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/11/29 11:28:53 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2025/02/16 06:49:21 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ class PresidentialPardonForm : public AForm {
         void execute(Bureaucrat const & executor) const;
 
     private:
-        const std::string target_;
+        const std::string _target;
 };

@@ -6,11 +6,13 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 18:42:50 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/11/28 19:23:53 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2025/02/16 06:56:57 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
+
+Bureaucrat::Bureaucrat(){}
 
 Bureaucrat::Bureaucrat(const std::string& name, int grade) : _name(name), _grade(grade){
     if (_grade < 1)
@@ -21,7 +23,7 @@ Bureaucrat::Bureaucrat(const std::string& name, int grade) : _name(name), _grade
 
 Bureaucrat::~Bureaucrat(){}
 
-Bureaucrat::Bureaucrat(const Bureaucrat &other) : _name(other.getName()) {}
+Bureaucrat::Bureaucrat(const Bureaucrat &other) : _name(other.getName()), _grade(other.getGrade()) {}
 
 Bureaucrat &Bureaucrat::operator=(const Bureaucrat &other) {
     if (this != &other) {

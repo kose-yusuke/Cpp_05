@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 11:14:42 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/11/29 13:24:54 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2025/02/16 06:42:01 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,10 +49,10 @@ class AForm{
         };
 
     private:
-        const std::string name_;
-        bool is_signed_;
-        const int grade_to_sign_;
-        const int grade_to_execute_;
+        const std::string _name;
+        bool _is_signed;
+        const int _grade_to_sign;
+        const int _grade_to_execute;
 };
 
 std::ostream& operator<<(std::ostream& os, const AForm& form);

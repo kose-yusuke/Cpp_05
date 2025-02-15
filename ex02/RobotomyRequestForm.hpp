@@ -6,7 +6,7 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 11:27:40 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/11/29 11:40:29 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2025/02/16 06:44:58 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ class RobotomyRequestForm : public AForm {
         void execute(Bureaucrat const& executor) const;
 
     private:
-        const std::string target_;
+        const std::string _target;
 };
