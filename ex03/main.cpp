@@ -16,6 +16,7 @@
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
 #include "Intern.hpp"
+#include <cstdlib>
 
 int main() {
     srand((int)time(NULL));

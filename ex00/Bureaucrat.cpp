@@ -21,6 +21,15 @@ Bureaucrat::Bureaucrat(const std::string& name, int grade) : _name(name), _grade
 
 Bureaucrat::~Bureaucrat(){}
 
+Bureaucrat::Bureaucrat(const Bureaucrat &other) : _name(other.getName()) {}
+
+Bureaucrat &Bureaucrat::operator=(const Bureaucrat &other) {
+    if (this != &other) {
+        _grade = other.getGrade();
+    }
+    return *this;
+}
+
 const std::string& Bureaucrat::getName() const {
     return _name;
 }
