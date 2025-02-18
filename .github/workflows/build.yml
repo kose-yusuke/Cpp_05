@@ -21,7 +21,13 @@ jobs:
           sudo apt-get install -y g++-9
           export CXX=g++-9
 
-      - name: Build with Makefile
+      - name: Build each exercise directory
         run: |
-          make || exit 1
+          for dir in ex*/; do
+            if [ -f "$dir/Makefile" ]; then
+              echo "Building in $dir..."
+              make -C "$dir" || exit 1
+            else
+              echo "Warning: No Makefile found in $dir"
+            fi
           done
